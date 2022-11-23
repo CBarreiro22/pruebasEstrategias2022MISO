@@ -2,8 +2,10 @@ import Login from "../login";
 import IngresoPost from "../ingresoPost";
 import TituloyContenido from "./tituloyContenido";
 
+
 const email = Cypress.env('email')
 const password = Cypress.env('password')
+
 describe('Testing basic Ghost', () => {
     context('Given I access the search engine page', () => {
         beforeEach(()=>{
@@ -15,23 +17,14 @@ describe('Testing basic Ghost', () => {
                 const login = new Login();
                 login.enterEmail(email);
                 login.enterPassword(password);
-            });
-            it('Then It not be empty ', () => {
-        
+                cy.wait(1000)
                 cy.get('input[name="identification"]').should('have.value',email)
-                cy.wait(2000)
+                cy.wait(1000)
                 cy.get('input[name="password"]').should('have.value',password)
                 cy.wait(2000)
-                /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
-            })
-        })
-        context('When I create tag', () => {
-            beforeEach(()=>{
-                const login = new Login();
-                login.enterEmail(email);
-                login.enterPassword(password);
                 login.submit();
             });
+ 
             it("Then content should be empty", function () {
                 const ingreso = new IngresoPost();
                 const tituloContenidoPost = new TituloyContenido();
