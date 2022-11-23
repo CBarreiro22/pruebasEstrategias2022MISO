@@ -1,6 +1,6 @@
 import Login from "../login";
 import IngresoPost from "../ingresoPost";
-import SinTituloContenido from "./sinTituloContenido";
+import SinTituloNiContenido from "./sinTituloNiContenido";
 
 
 const email = Cypress.env('email')
@@ -25,11 +25,11 @@ describe('Testing basic Ghost', () => {
                 login.submit();
             });
  
-            it("Then content should be empty", function () {
+            it("Then the title and content should be empty", function () {
                 const ingreso = new IngresoPost();
-                const sintituloContenidoPost = new SinTituloContenido();
+                const sintituloNiContenido = new SinTituloNiContenido();
                 ingreso.ingresoPost();
-                sintituloContenidoPost.sinTituloContenidoPost();
+                sintituloNiContenido.sinTituloNiContenidoPost();
             })
         })
     })
