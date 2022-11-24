@@ -5,7 +5,7 @@ module.exports = defineConfig({
     baseUrl: 'http://localhost:2370/ghost/#/signin'
   },
   env: {
-    email: 'c.barreiroh@uniandes.edu.co',
-    password: 'Q123456789'
+    email: '',
+    password: ''
   }
 })
