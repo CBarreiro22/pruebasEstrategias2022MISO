@@ -1,4 +1,4 @@
-import Login from "../login";
+import Login from "../../login";
 import ingresoMiembro from "../ingresoMiembro";
 import SinNombreEmailErroneo from "./sinNombreEmailErroneo";
 
