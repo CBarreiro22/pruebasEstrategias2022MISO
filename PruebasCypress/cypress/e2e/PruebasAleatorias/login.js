@@ -15,7 +15,7 @@ class Login {
         return this
     }
     submit() {
-        cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
+        cy.get('button').contains('span','Sign in').click()
     }
     
 }
