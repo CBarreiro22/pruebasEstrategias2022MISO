@@ -1,5 +1,5 @@
-import Login from "../login";
-import ingresoMiembro from "../ingresoMiembro";
+import Login from "../../login";
+import ingresoMiembro from "../../ingresoMiembro";
 import SoloEmailCorrecto from "./soloEmailCorrecto";
 
 const email = Cypress.env('email')

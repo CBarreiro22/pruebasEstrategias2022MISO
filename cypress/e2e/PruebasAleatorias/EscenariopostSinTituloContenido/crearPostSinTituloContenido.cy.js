@@ -1,5 +1,5 @@
-import Login from "../login";
-import IngresoPost from "../ingresoPost";
+import Login from "../../login";
+import IngresoPost from "../../ingresoPost";
 import SinTituloContenido from "./sinTituloContenido";
 
 
