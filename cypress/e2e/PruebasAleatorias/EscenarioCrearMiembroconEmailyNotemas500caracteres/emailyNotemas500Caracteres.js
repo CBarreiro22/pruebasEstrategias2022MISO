@@ -8,6 +8,8 @@ class SoloEmailCorrectoyNote500Carateres {
         cy.wait(2000)
         cy.get('textarea[class="gh-member-details-textarea ember-text-area gh-input ember-view"]').type(content2)
         cy.wait(2000)
+        cy.get('textarea[class="gh-member-details-textarea ember-text-area gh-input ember-view"]').should('have.value',content2) 
+        cy.wait(1000)
         cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').contains('span','Save').click()
         cy.wait(1000)
     }
