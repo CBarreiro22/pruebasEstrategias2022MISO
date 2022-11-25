@@ -6,6 +6,8 @@ module.exports = defineConfig({
   },
   env: {
     email: 'e.angulov@uniandes.edu.co',
-    password: 'Elymary-420@'
+    password: 'Elymary-420@',
+    mockarooUrl:'https://api.mockaroo.com/api/a1e06630',
+    mockarooKey:'dcedeee0'
   }
 })
