@@ -3,8 +3,8 @@ const randomData = aPrioriData[Math.floor(Math.random() * aPrioriData.length)];
 
 class TituloyContenidomas250caracteres {
     tituloyContenido250Post() {
-        let content = randomData['naughty_string'];
-        let content2 = randomData['titulo_250'];
+        let content = randomData['character_field'];
+        let content2 = randomData['contenido_255'];
         cy.wait(3000)
         cy.get('textarea[class="gh-editor-title ember-text-area gh-input ember-view"]').type(content)
         cy.wait(1000)
