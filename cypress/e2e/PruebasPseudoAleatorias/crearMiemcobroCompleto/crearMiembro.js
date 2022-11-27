@@ -1,6 +1,6 @@
 
 class CrearMiembro {
-    crearMiembro(content3, content, content2) {
+    crearMiembro(content, content2, content3) {
        
         //Name
         cy.get('input[name="name"]').type(content3)
