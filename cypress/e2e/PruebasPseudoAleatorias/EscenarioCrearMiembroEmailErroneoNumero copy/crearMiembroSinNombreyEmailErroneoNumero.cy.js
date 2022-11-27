@@ -2,6 +2,7 @@ import Login from "../../login";
 import ingresoMiembro from "../../ingresoMiembro";
 import SinNombreEmailErroneoNumero from "./sinNombreEmailErroneoNumero";
 
+
 const email = Cypress.env('email')
 const password = Cypress.env('password')
 const mockarooUrl = Cypress.env('mockarooUrl');
@@ -13,6 +14,7 @@ describe('Testing basic Ghost', () => {
             const login = new Login();
             login.navigate();
         })
+        let pseudo_random_data = new Array[1];
         context('When I write and login in the page', () => {
             beforeEach(()=>{
                 const login = new Login();
@@ -25,7 +27,8 @@ describe('Testing basic Ghost', () => {
                 cy.wait(2000)
                 login.submit();
             });
-            let pseudo_random_data = new Array;
+ 
+           
             (async function () {
         
                 try {
@@ -44,7 +47,7 @@ describe('Testing basic Ghost', () => {
                     const dataJSON = JSON.parse(data);
         
         
-                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.test_data));
+                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.ip_address));
         
                 } catch (error) {
                     console.log('falla en la consulta' + error.message)
@@ -52,20 +55,13 @@ describe('Testing basic Ghost', () => {
                 }
         
             })().catch(e => { console.error(e) });
-        
-        
-        
-            beforeEach(() => {
-                const login = new Login();
-                login.navigate();
-            })
-            let content = pseudo_random_data[0];
-            console.log("content: "+ content)
+
+
             it("Then the title and content should be empty", function () {
                 const ingreso = new ingresoMiembro();
                 const niNombreEmailIncorrectoNumero = new SinNombreEmailErroneoNumero();
                 ingreso.ingresoMiembro();
-                niNombreEmailIncorrectoNumero.SinNombreEmailErroneoNumeroMiembro(content);
+                niNombreEmailIncorrectoNumero.SinNombreEmailErroneoNumeroMiembro(pseudo_random_data[0]);
             })
         })
     })
