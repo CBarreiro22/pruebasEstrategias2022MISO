@@ -1,8 +1,10 @@
+
 class Login {
     navigate() {
         cy.visit('/')
     }
     enterEmail(username) {
+        console.log("Loging... "+username);
         cy.get('input[name="identification"]')
             .clear()
             .type(username);
