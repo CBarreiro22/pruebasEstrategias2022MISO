@@ -1,11 +1,12 @@
 import Login from "../../login";
-import IngresoTag from "../../IngresoTag";
-import CrearTagDescripcion from "./EscenarioCrearTagDescripcion";
+import ingresoMiembro from "../../ingresoMiembro";
+import SoloEmailCorrectoyNoteMenos500Carateres from "./emailyNoteMenos500Caracteres";
 
 const email = Cypress.env('email')
 const password = Cypress.env('password')
 const mockarooUrl = Cypress.env('mockarooUrl');
 const mockarooKey = Cypress.env('mockarooKey');
+
 describe('Testing basic Ghost', () => {
     context('Given I access the search engine page', () => {
         beforeEach(()=>{
@@ -25,8 +26,9 @@ describe('Testing basic Ghost', () => {
                 login.submit();
             });
             let pseudo_random_data = new Array;
+
             (async function () {
-               
+
                 try {
                     var myHeaders = new Headers();
                     myHeaders.append("Cookie", "layer0_bucket=74; layer0_destination=default; layer0_environment_id_info=1680b086-a116-4dc7-a17d-9e6fdbb9f6d9");
@@ -43,28 +45,27 @@ describe('Testing basic Ghost', () => {
                     const dataJSON = JSON.parse(data);
 
 
-                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.test_data));
+                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.content));
                     pseudo_random_data.push(Object.values(dataJSON).map(data => data.email));
-                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.first_name));
-                    pseudo_random_data.push(Object.values(dataJSON).map(data => data.last_name));
-
+                   
 
                 } catch (error) {
                     console.log('falla en la consulta' + error.message)
                     throw error
                 }
 
-            })().catch(e => { console.error(e) }).then;
-        
-            let content = pseudo_random_data[2];
+            })().catch(e => { console.error(e) });
+
+            let content = pseudo_random_data[1];
             let content2 = pseudo_random_data[1];
-            let content3 = pseudo_random_data[0];
-            it("Then content and title should not be empty", function () {
-                
-                const ingreso = new IngresoTag();
-                const crearTagDescripcion = new CrearTagDescripcion();
-                ingreso.ingresoTag();
-                crearTagDescripcion.crearTagDescripcion(content, content2);
+            
+
+
+            it("Then the title and content should be empty", function () {
+                const ingreso = new ingresoMiembro();
+                const soloEmailyNoteMenos500 = new SoloEmailCorrectoyNoteMenos500Carateres();
+                ingreso.ingresoMiembro();
+                soloEmailyNoteMenos500.soloEmailCorrectoyNoteMenos500CarateresMiembro(content, content2);
             })
         })
     })

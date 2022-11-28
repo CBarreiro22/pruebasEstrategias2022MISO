@@ -1,6 +1,6 @@
 import Login from "../../login";
-import IngresoTag from "../../IngresoTag";
-import CrearTagDescripcion from "./EscenarioCrearTagDescripcion";
+import IngresoPage from "../../ingresoPage";
+import TituloyContenidoPage from "./tituloyContenidoPage";
 
 const email = Cypress.env('email')
 const password = Cypress.env('password')
@@ -25,8 +25,9 @@ describe('Testing basic Ghost', () => {
                 login.submit();
             });
             let pseudo_random_data = new Array;
+
             (async function () {
-               
+
                 try {
                     var myHeaders = new Headers();
                     myHeaders.append("Cookie", "layer0_bucket=74; layer0_destination=default; layer0_environment_id_info=1680b086-a116-4dc7-a17d-9e6fdbb9f6d9");
@@ -54,17 +55,18 @@ describe('Testing basic Ghost', () => {
                     throw error
                 }
 
-            })().catch(e => { console.error(e) }).then;
-        
+            })().catch(e => { console.error(e) });
+
             let content = pseudo_random_data[2];
             let content2 = pseudo_random_data[1];
             let content3 = pseudo_random_data[0];
+            console.log('contents:' + content3 + content + content2);
+
             it("Then content and title should not be empty", function () {
-                
-                const ingreso = new IngresoTag();
-                const crearTagDescripcion = new CrearTagDescripcion();
-                ingreso.ingresoTag();
-                crearTagDescripcion.crearTagDescripcion(content, content2);
+                const ingreso = new IngresoPage();
+                const tituloContenidoPage = new TituloyContenidoPage();
+                ingreso.ingresoPage();
+                tituloContenidoPage.tituloyContenidoPage(content, content2);
             })
         })
     })
