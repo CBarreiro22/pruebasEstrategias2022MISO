@@ -12,6 +12,8 @@ Adicional, si se quieren saber como se realizaron cada una de las estrategias de
 </br>
 [Listado de pruebas](Listado_Pruebas.csv)
 
+en la parte de issues se pueden ver los defectos encontrados.
+
 ## Ejecución
 Para poder utilizar este repositorio procede en primera instancia clonando el repositorio con el siguiente comando:
 
