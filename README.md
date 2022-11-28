@@ -6,6 +6,11 @@ Si se quiere consultarlos escenarios realizados con cypress haz click aqui <a hr
 
 Adicional, si se quieren saber como se realizaron cada una de las estrategias de generacion de datos con cypress por favor <a href="https://github.com/CBarreiro22/pruebasEstrategias2022MISO/wiki/Generacion_de_datos">Haz click aqui</a>
 
+### Listado de funcionalides
+
+[listado de funcionalidades](funcionalidades.csv)
+</br>
+[Listado de pruebas](Listado_Pruebas.csv)
 
 ## Ejecución
 Para poder utilizar este repositorio procede en primera instancia clonando el repositorio con el siguiente comando:
