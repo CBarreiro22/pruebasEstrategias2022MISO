@@ -64,7 +64,7 @@ describe('Testing basic Ghost', () => {
                 const ingreso = new IngresoTag();
                 const crearTagDescripcion = new CrearTagDescripcion();
                 ingreso.ingresoTag();
-                crearTagDescripcion.crearTagDescripcion(content2);
+                crearTagDescripcion.crearTagDescripcion(content, content2);
             })
         })
     })
