@@ -1,0 +1,11 @@
+ID Funcionalidad,Nombre funcionalidad,Descripcion Funcionalidad
+1,Crear Post,Crear una nueva post o documento en la plataforma Ghost con un título y contenido específico.
+2,Editar Post,Modificar un post o documento existente en la plataforma Ghost en el título o en el contenido.
+3,Publicar Post,"rear una nueva post o documento en la plataforma Ghost con un título y contenido específico, finalmente realizando la publicacion"
+4,EliminarPost,Borrar un post o documento existente en la plataforma Ghost.
+5,Crear Page,Crear una nueva pagina para un blog dentro de la aplicacion para ghost
+6,Editar Page,Modificar una pagina  existente en la plataforma Ghost en el título o en el contenido.
+7,Crear Miembro,Crear un nuevo miembro dentro de los registros de la aplicacion ghost
+8,Editar Membro,Editar un miembro ya existente
+9,Crear Tags,Crear un tags para implementacion dentro del post
+10,Publicar Page,Crear una nueva pagina para un blog dentro de la aplicacion para ghost y finalment publicarla

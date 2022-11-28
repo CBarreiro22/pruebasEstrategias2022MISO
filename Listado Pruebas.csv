@@ -1,0 +1,99 @@
+Listado de 120 Escenarios de pruebas utlizando Estrategias de generacion de datos,,,
+,,,
+ID Funcionalidad,ID Escenario,Escenario de prueba,Estrategia Generacion Datos
+1,E01,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir Titulo y contenido en el post, Seleccionar Preview",Aleatorio
+1,E02,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir solo contenido sin titulo en el post, Seleccionar Preview",Aleatorio
+1,E03,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Guardar el post sin contenido ni titulo, Seleccionar Preview",Aleatorio
+1,E04,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir Titulo,Escribir Contenido con mas de 100 palabras , Seleccionar Preview",Aleatorio
+6,E05,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email texto que con formato email,Seleccionar el boton save",Aleatorio
+6,E06,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email texto que no tiene formato email,Seleccionar el boton save",Aleatorio
+1,E07,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,escribir titulo y contenido en formato numero, Seleccionar Preview",Aleatorio
+1,E08,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,escribir titulo y contenido en formato alphanumerico, Seleccionar Preview",Aleatorio
+4,E09,"Iniciar Sesion, Seleccionar Page,Seleccionar Nuevo Post,escribir titulo y contenido en texto, Seleccionar Preview",Aleatorio
+4,E10,"Iniciar Sesion, Seleccionar Page,Seleccionar Nuevo Post,escribir titulo y contenido Numerico, Seleccionar Preview",Aleatorio
+6,E011,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email Numero que no tiene formato email,Seleccionar el boton save",Aleatorio
+6,E12,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email con formato email y escribir mas de 500 caracteres en el note,Seleccionar el boton save",Aleatorio
+6,E13,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un email, escribir label y escribir descripcion,Seleccionar el boton save",Aleatorio
+1,E014,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir Titulo y contenido en el post, Seleccionar Preview",Apriori
+1,E15,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir solo contenido sin titulo en el post, Seleccionar Preview",Apriori
+1,E16,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Guardar el post sin contenido ni titulo, Seleccionar Preview",Apriori
+1,E17,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,Escribir Titulo,Escribir Contenido con mas de 100 palabras , Seleccionar Preview",Apriori
+6,E18,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email texto que con formato email,Seleccionar el boton save",Apriori
+6,E19,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email texto que no tiene formato email,Seleccionar el boton save",Apriori
+1,E20,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,escribir titulo y contenido en formato numero, Seleccionar Preview",Apriori
+1,E21,"Iniciar Sesion, Seleccionar Post,Seleccionar Nuevo Post,escribir titulo y contenido en formato alphanumerico, Seleccionar Preview",Apriori
+4,E22,"Iniciar Sesion, Seleccionar Page,Seleccionar Nuevo Post,escribir titulo y contenido en texto, Seleccionar Preview",Apriori
+4,E23,"Iniciar Sesion, Seleccionar Page,Seleccionar Nuevo Post,escribir titulo y contenido Numerico, Seleccionar Preview",Apriori
+6,E024,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email Numero que no tiene formato email,Seleccionar el boton save",Apriori
+6,E25,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir en el input de email con formato email y escribir mas de 500 caracteres en el note,Seleccionar el boton save",Apriori
+6,E26,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un email, escribir label y escribir descripcion,Seleccionar el boton save",Apriori
+6,E27,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note mas de 500 caracteres,Seleccionar el boton save",Aleatorio
+6,E28,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note menos de 500 caracteres,Seleccionar el boton save",Aleatorio
+6,E29,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note igual de 500 caracteres,Seleccionar el boton save",Aleatorio
+6,E30,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre igual a 191 caracteres y email,Seleccionar el boton save",Aleatorio
+6,E31,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre mas de 191 caracteres y email,Seleccionar el boton save",Aleatorio
+6,E32,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre menos de 191 caracteres y email,Seleccionar el boton save",Aleatorio
+4,E33,"Iniciar Sesion,Seleccionar Pages,Seleccionar Nuevo page,Escribir Titulo y contenido en alphanumerico,Seleccionar el boton save",Aleatorio
+8,E34,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir descripcion menos de 500,Seleccionar el boton save",Aleatorio
+8,E35,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir nombre slug y descripcion,Seleccionar el boton save",Aleatorio
+8,E36,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion en el tag,Seleccionar el boton save",Aleatorio
+8,E37,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion en el tag,Seleccionar el boton save",Aleatorio
+8,E38,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion con 500 caracteres,Seleccionar el boton save",Aleatorio
+8,E39,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion con mas 500 caracteres,Seleccionar el boton save",Aleatorio
+8,E40,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con nombre alphanumerico,Seleccionar el boton save",Aleatorio
+8,E41,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion alphanumerico,Seleccionar el boton save",Aleatorio
+8,E42,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion Numerica,Seleccionar el boton save",Aleatorio
+8,E43,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion Numerica,Seleccionar el boton save",Aleatorio
+8,E43,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre,Seleccionar el boton save",Aleatorio
+8,E44,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,No escribir nada,Seleccionar el boton save",Aleatorio
+10,E45,"Iniciar Sesion,Seleccionar Page,Seleccionar Page,Escribir un titulo con 255 caracteres,Seleccionar el boton publicar",Aleatorio
+10,E46,"Iniciar Sesion,Seleccionar Page,Seleccionar Page,Escribir un titulo mas de 255 caracteres,Seleccionar el boton publicar",Aleatorio
+3,E47,"Iniciar Sesion,Seleccionar Post,Seleccionar Post,Escribir un titulo con 255 caracteres,Seleccionar el boton publicar",Aleatorio
+3,E48,"Iniciar Sesion,Seleccionar Post,Seleccionar Post,Escribir un titulo mas de 255 caracteres,Seleccionar el boton publicar",Aleatorio
+6,E49,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note mas de 500 caracteres,Seleccionar el boton save",Apriori
+6,E50,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note menos de 500 caracteres,Seleccionar el boton save",Apriori
+6,E51,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre, escribir un emai y Note igual de 500 caracteres,Seleccionar el boton save",Apriori
+6,E52,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre igual a 191 caracteres y email,Seleccionar el boton save",Apriori
+6,E53,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre mas de 191 caracteres y email,Seleccionar el boton save",Apriori
+6,E54,"Iniciar Sesion,Seleccionar Miembro,Seleccionar Nuevo Miembro,Seleccionar y escribir un nombre menos de 191 caracteres y email,Seleccionar el boton save",Apriori
+4,E55,"Iniciar Sesion,Seleccionar Pages,Seleccionar Nuevo page,Escribir Titulo y contenido en alphanumerico,Seleccionar el boton save",Apriori
+8,E56,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir descripcion menos de 500,Seleccionar el boton save",Apriori
+8,E57,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir nombre slug y descripcion,Seleccionar el boton save",Apriori
+8,E58,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion en el tag,Seleccionar el boton save",Apriori
+8,E59,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion en el tag,Seleccionar el boton save",Apriori
+8,E60,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion con 500 caracteres,Seleccionar el boton save",Apriori
+8,E61,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo descripcion con mas 500 caracteres,Seleccionar el boton save",Apriori
+8,E62,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con nombre alphanumerico,Seleccionar el boton save",Apriori
+8,E63,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion alphanumerico,Seleccionar el boton save",Apriori
+8,E64,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion Numerica,Seleccionar el boton save",Apriori
+8,E65,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre descripcion Numerica,Seleccionar el boton save",Apriori
+8,E66,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir solo con Nombre,Seleccionar el boton save",Apriori
+8,E67,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,No escribir nada,Seleccionar el boton save",Apriori
+10,E68,"Iniciar Sesion,Seleccionar Page,Seleccionar Page,Escribir un titulo con 255 caracteres,Seleccionar el boton publicar",Apriori
+10,E69,"Iniciar Sesion,Seleccionar Page,Seleccionar Page,Escribir un titulo mas de 255 caracteres,Seleccionar el boton publicar",Apriori
+3,E70,"Iniciar Sesion,Seleccionar Post,Seleccionar Post,Escribir un titulo con 255 caracteres,Seleccionar el boton publicar",Apriori
+3,E71,"Iniciar Sesion,Seleccionar Post,Seleccionar Post,Escribir un titulo mas de 255 caracteres,Seleccionar el boton publicar",Apriori
+7,E72,"Iniciar sesion, seleccionar crear miembro, ingresar nombre, ingresar correo generar miembro",Apriori
+7,E73,"iniciar sesion ,CreaMiembrocon Email No con mas de 500 caracteres",Apriori
+7,E74,EscenarioCrearMiembroEmailErroneoNumero/,Apriori
+7,E75,iniciar sesion  Crear Miembro Email Erroneo Numero'/,Apriori
+7,E76,EscenarioCrearMiembrosinNombreyConEmailErroneo(Texto)'/,Apriori
+7,E72,"Iniciar sesion, seleccionar crear miembro, ingresar nombre, ingresar correo generar miembro",Pseudo aleatorias
+7,E73,"iniciar sesion ,CreaMiembrocon Email No con mas de 500 caracteres",Pseudo aleatorias
+7,E74,EscenarioCrearMiembroEmailErroneoNumero/,Pseudo aleatorias
+7,E75,iniciar sesion  Crear Miembro Email Erroneo Numero'/,Pseudo aleatorias
+7,E76,EscenarioCrearMiembrosinNombreyConEmailErroneo(Texto)'/,Pseudo aleatorias
+5,E77,"iniciar sesion , Crear Page Titulo Contenido",Pseudo aleatorias
+9,E78,"Iniciar sesion , Escenario Crear TagCompleto",Pseudo aleatorias
+9,E79,iniciar sesion Escenario Crea Tag Descripcion,Pseudo aleatorias
+9,E80,Iniciar sesion Escenario Crea Tag Nombre Alphanumerico,Pseudo aleatorias
+9,E81,Iniciar sesion Crea Tag Nombre Numero,Pseudo aleatorias
+9,E82,iniciar sesion Escenario CreaTag Solo Nombre,Pseudo aleatorias
+9,E83,iniciar sesion Escenario post Titulo Contenido,Pseudo aleatorias
+9,E84,Iniciar sesion Esc Tituloy Cont250 caract ,Pseudo aleatorias
+9,E85,Iniciar sesion y crear tag vacio,Pseudo aleatorias
+7,E86,"Iniciar sesion, dar click en generar miembro, ingresar email, ingresar contenido mayor a 500",Pseudo aleatorias
+7,E87,"Iniciar sesion , editar post",Pseudo aleatorias
+4,E88,"Iniciar Sesion,Seleccionar Pages,Seleccionar Nuevo page,Escribir Titulo mas de 255 y contenido,Seleccionar el boton save",Aleatorio
+4,E89,"Iniciar Sesion,Seleccionar Post,Seleccionar Nuevo page,Escribir Titulo mas de 255 y contenido,Seleccionar el boton save",Aleatorio
+8,E90,"Iniciar Sesion,Seleccionar Tags,Seleccionar Nuevo tag,Escribir Nombre 191,Seleccionar el boton save, seleccionar Delete tags",Aleatorio
